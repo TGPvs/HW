@@ -19,7 +19,7 @@ public class Battery {
 
     public void charge() {
         if (this.capacity == this.MAX_CAPACITY) {
-            System.out.println("Battery is full");
+            System.out.println("Battery is already full!");
         } else {
             this.capacity = this.MAX_CAPACITY;
             System.out.println("Battery is charged! You can play!");
