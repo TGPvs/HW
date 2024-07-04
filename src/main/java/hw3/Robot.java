@@ -43,6 +43,5 @@ public class Robot {
     }
     public void charge() {
         this.battery.charge();
-        System.out.println("Robot is charged up to 100");
     }
 }

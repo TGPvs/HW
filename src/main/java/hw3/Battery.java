@@ -18,10 +18,13 @@ public class Battery {
     }
 
     public void charge() {
-        this.capacity = this.MAX_CAPACITY;
-        System.out.println("Battery is FULL! You can play!");
+        if (this.capacity == this.MAX_CAPACITY) {
+            System.out.println("Battery is full");
+        } else {
+            this.capacity = this.MAX_CAPACITY;
+            System.out.println("Battery is charged! You can play!");
+        }
     }
-
     public boolean decreaseCharge() {
         if (this.capacity >= 30) {
             this.capacity -= 30;
