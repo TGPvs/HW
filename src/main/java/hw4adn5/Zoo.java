@@ -10,9 +10,10 @@ public class Zoo {
     public static void main(String[] args) {
 
 
-        String line = new String();
+        String line;
         Scanner sc = new Scanner(System.in);
         boolean zooOpen = true;
+        boolean showList = false;
 
         List<Creature> creatures = new ArrayList<>();
 
@@ -24,7 +25,7 @@ public class Zoo {
         creatures.add(new Vobla("Вобла", 2, "Женская особь"));
 
 
-        System.out.println("\nДобро пожаловать! Чтобы посмотреть список всех животных введите 'add' или 'quit' для выхода!");
+        System.out.println("\nДобро пожаловать! Чтобы посмотреть список всех животных введите 'list' или 'quit' для выхода!");
 
 
         while (zooOpen) {
@@ -32,6 +33,11 @@ public class Zoo {
             line = sc.nextLine();
             switch (line) {
                 case "list":
+                    if (!showList){
+                        showList = true;
+                    }else{
+                        System.out.println("Сначала войдите в список животных!");
+                    }
                     System.out.println("Список всех животных:");
                     for (int i = 0; i < creatures.size(); i++) {
                         System.out.println((i + 1) + ". " + creatures.get(i).getName());
@@ -43,19 +49,24 @@ public class Zoo {
                     System.out.println("До свидания!");
                     break;
                 default:
-                    try {
-                        int number = Integer.parseInt(line);
-                        if (number >= 0 && number <= creatures.size()) {
-                            Creature creature = creatures.get(number - 1);
-                            System.out.println("Имя: " + creature.getName() + ". Возраст: " +creature.getAge() +". Пол: " +creature.gender);
-                            creature.breath();
-                            creature.move();
-                            creature.makeSound();
-                        } else {
-                            System.out.println("Неверный номер. Попробуйте снова");
+                    if (showList) {
+                        try {
+                            int number = Integer.parseInt(line);
+                            if (number > 0 && number <= creatures.size()) {
+                                Creature creature = creatures.get(number - 1);
+                                System.out.println("Имя: " + creature.getName() + ". Возраст: " + creature.getAge() + ". Пол: " + creature.gender);
+                                creature.breath();
+                                creature.move();
+                                creature.makeSound();
+                            } else {
+                                System.out.println("Неверный номер. Попробуйте снова");
+                            }
+                        } catch (NumberFormatException e) {
+                            System.out.println("Неверная команда. Пожалуйста введите 'list' или 'quit'.");
                         }
-                    } catch (NumberFormatException e) {
-                        System.out.println("Неверная команда. Пожалуйста введите 'list' или 'quit'.");
+
+                    } else {
+                        System.out.println("Сначала введите 'list', чтобы получить список животных или 'quit' для выхода.");
                     }
                     break;
             }
