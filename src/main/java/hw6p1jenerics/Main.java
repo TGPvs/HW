@@ -1,4 +1,4 @@
-package hw5p1jenerics;
+package hw6p1jenerics;
 
 // не разобрали на уроке потом сам буду разбираться
 

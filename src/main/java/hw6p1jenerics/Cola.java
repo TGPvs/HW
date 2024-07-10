@@ -1,4 +1,4 @@
-package hw5p1jenerics;
+package hw6p1jenerics;
 
 public class Cola extends Liquid{
 }
