@@ -1,4 +1,4 @@
-package hw4adn5;
+package hw4and5;
 
 public abstract class Creature implements IBreath, IMove, ISound {
     public String name;

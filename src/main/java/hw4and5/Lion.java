@@ -1,4 +1,4 @@
-package hw4adn5;
+package hw4and5;
 
 public class Lion extends Animal {
     public Lion(String name,int age,String gender) {

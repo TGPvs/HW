@@ -1,4 +1,4 @@
-package hw4adn5;
+package hw4and5;
 
 public abstract class Bird extends Creature {
     public Bird(String name,int age,String gender) {

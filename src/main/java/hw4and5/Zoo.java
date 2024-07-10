@@ -1,4 +1,4 @@
-package hw4adn5;
+package hw4and5;
 
 import java.util.List;
 import java.util.Scanner;
@@ -10,7 +10,7 @@ public class Zoo {
     public static void main(String[] args) {
 
 
-        String line;
+        String line = new String();                           //уточнить про эту историю
         Scanner sc = new Scanner(System.in);
         boolean zooOpen = true;
         boolean showList = false;

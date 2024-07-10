@@ -1,4 +1,4 @@
-package hw4adn5;
+package hw4and5;
 
 public abstract class Animal extends Creature {
     public Animal(String name, int age,String gender) {
