@@ -74,7 +74,7 @@ public class Main {
                         game = false;
                         sc.close();
                         System.out.println("Robot is shutting down");
-                    }else{
+                    } else {
                         System.out.println("Robot is not active! Please type 'start'!");
                     }
                     break;
