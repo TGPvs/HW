@@ -33,11 +33,7 @@ public class Zoo {
             line = sc.nextLine();
             switch (line) {
                 case "list":
-                    if (!showList){
-                        showList = true;
-                    }else{
-                        System.out.println("Сначала войдите в список животных!");
-                    }
+                    showList = true;
                     System.out.println("Список всех животных:");
                     for (int i = 0; i < creatures.size(); i++) {
                         System.out.println((i + 1) + ". " + creatures.get(i).getName());
