@@ -1,23 +1,23 @@
 package hw6p1jenerics;
 
 public class Cup<T extends ILiquid> {
-    private T content;
+    private T contains;
 
-    public Cup(T content) {
-        this.content = content;
+    public Cup(T contains) {
+        this.contains = contains;
     }
 
     public void pour() {
-        if (content != null) {
-            content.pourOut();
-            content = null;
+        if (contains != null) {
+            contains.pourOut();
+            contains = null;
         } else {
             System.out.println("Чашка пуста.");
         }
     }
 
-    public void fill(T newContent) {
-        content = newContent;
-        System.out.println("Чашка заполнена " + newContent.getClass().getSimpleName() + ".");
+    public void fill(T newContains) {
+        contains = newContains;
+        System.out.println("Чашка заполнена " + newContains.getClass().getSimpleName() + ".");
     }
 }
