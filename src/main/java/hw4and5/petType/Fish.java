@@ -1,6 +1,4 @@
-package hw4and5.petType.pets;
-
-import hw4and5.petType.Creature;
+package hw4and5.petType;
 
 public abstract class Fish extends Creature {
     public Fish(String name, int age,String gender) {
@@ -12,7 +10,7 @@ public abstract class Fish extends Creature {
     }
     @Override
     public void breath(){
-        System.out.println(getName()+ " дышит дабрами.");
+        System.out.println(getName()+ " дышит жабрами.");
 
     }
 

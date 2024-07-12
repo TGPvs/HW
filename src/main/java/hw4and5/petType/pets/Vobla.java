@@ -1,5 +1,7 @@
 package hw4and5.petType.pets;
 
+import hw4and5.petType.Fish;
+
 public class Vobla extends Fish {
 
     public Vobla(String name,int age,String gender) {
