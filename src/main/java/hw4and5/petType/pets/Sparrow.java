@@ -10,7 +10,7 @@ public class Sparrow extends Bird {
 
     @Override
     public void makeSound() {
-        System.out.println(getName()+ " Чирикает.");
+        System.out.println(getName()+ " чирикает.");
 
     }
 }

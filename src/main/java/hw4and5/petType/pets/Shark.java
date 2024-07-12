@@ -10,7 +10,7 @@ public class Shark extends Fish {
 
     @Override
     public void makeSound() {
-        System.out.println(getName()+ " Не издает звуков.");
+        System.out.println(getName()+ " не издает звуков.");
 
     }
 }

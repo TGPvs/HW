@@ -10,7 +10,7 @@ public class Eagle extends Bird {
 
     @Override
     public void makeSound() {
-        System.out.println(getName()+ " Кричит.");
+        System.out.println(getName()+ " кричит.");
 
     }
 }

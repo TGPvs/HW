@@ -10,7 +10,7 @@ public class Elephant extends Animals {
 
     @Override
     public void makeSound() {
-        System.out.println(getName()+ " Трубит.");
+        System.out.println(getName()+ " трубит.");
 
     }
 }
