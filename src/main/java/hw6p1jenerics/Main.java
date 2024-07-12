@@ -1,5 +1,10 @@
 package hw6p1jenerics;
 
+import hw6p1jenerics.drinkable.Cola;
+import hw6p1jenerics.drinkable.Oil;
+import hw6p1jenerics.drinkable.Water;
+import hw6p1jenerics.vessel.Cup;
+
 public class Main {
     public static void main(String[] args) {
         Cup<Water> waterCup = new Cup<>(new Water());

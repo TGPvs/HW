@@ -1,4 +1,4 @@
-package hw6p1jenerics;
+package hw6p1jenerics.actions;
 
 public interface ILiquid {
     public void pourOut();

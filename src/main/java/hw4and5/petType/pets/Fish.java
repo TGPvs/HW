@@ -1,4 +1,6 @@
-package hw4and5;
+package hw4and5.petType.pets;
+
+import hw4and5.petType.Creature;
 
 public abstract class Fish extends Creature {
     public Fish(String name, int age,String gender) {

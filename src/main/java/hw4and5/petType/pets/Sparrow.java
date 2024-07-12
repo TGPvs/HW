@@ -1,4 +1,6 @@
-package hw4and5;
+package hw4and5.petType.pets;
+
+import hw4and5.petType.Bird;
 
 public class Sparrow extends Bird {
 

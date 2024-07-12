@@ -1,5 +1,9 @@
 package hw4and5;
 
+import hw4and5.petType.*;
+import hw4and5.petType.pets.*;
+
+
 import java.util.List;
 import java.util.Scanner;
 import java.util.ArrayList;

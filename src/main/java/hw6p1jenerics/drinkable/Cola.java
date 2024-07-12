@@ -1,4 +1,6 @@
-package hw6p1jenerics;
+package hw6p1jenerics.drinkable;
+
+import hw6p1jenerics.actions.ILiquid;
 
 public class Cola implements ILiquid {
     @Override

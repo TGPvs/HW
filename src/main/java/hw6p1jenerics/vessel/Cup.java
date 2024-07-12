@@ -1,4 +1,6 @@
-package hw6p1jenerics;
+package hw6p1jenerics.vessel;
+
+import hw6p1jenerics.actions.ILiquid;
 
 public class Cup<T extends ILiquid> {
     private T contains;

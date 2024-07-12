@@ -1,4 +1,8 @@
-package hw4and5;
+package hw4and5.petType;
+
+import hw4and5.actions.IBreath;
+import hw4and5.actions.IMove;
+import hw4and5.actions.ISound;
 
 public abstract class Creature implements IBreath, IMove, ISound {
     public String name;

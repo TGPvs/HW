@@ -1,7 +1,7 @@
-package hw4and5;
+package hw4and5.petType;
 
-public abstract class Animal extends Creature {
-    public Animal(String name, int age,String gender) {
+public abstract class Animals extends Creature {
+    public Animals(String name, int age, String gender) {
         super(name,age,gender);
     }
     @Override

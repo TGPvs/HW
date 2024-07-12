@@ -1,4 +1,4 @@
-package hw4and5;
+package hw4and5.actions;
 
 public interface ISound {
     public void makeSound();

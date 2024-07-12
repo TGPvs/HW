@@ -1,8 +1,8 @@
-package hw4and5;
+package hw4and5.petType.pets;
 
-public class Vobla extends Fish {
+public class Shark extends Fish {
 
-    public Vobla(String name,int age,String gender) {
+    public Shark(String name,int age,String gender) {
         super(name,age,gender);
     }
 

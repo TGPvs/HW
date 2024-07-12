@@ -1,4 +1,4 @@
-package hw4and5;
+package hw4and5.petType;
 
 public abstract class Bird extends Creature {
     public Bird(String name,int age,String gender) {
