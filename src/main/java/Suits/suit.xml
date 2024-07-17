@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Suite1" verbose="1">
+
+    <test name = "Smoke">
+        <classes>
+            <class name="Lessons8and9.Tests.TestNG" />
+            <class name="Lessons8and9.Tests.TestNgTraining"/>
+        </classes>
+    </test>
+    <test name = "Critical">
+        <classes>
+            <class name="Lessons8and9.Tests.TestBeforeAfter"/>
+        </classes>
+    </test>
+</suite>
