@@ -13,7 +13,7 @@ public class CreatureTest {
         Assert.assertEquals(lion.getName(), "Симба");
         Assert.assertEquals(lion.getAge(), 2);
         Assert.assertEquals(lion.getGender(), "Мужская особь");
-        System.out.println("Лев является актуальным");
+        System.out.println("Лев является искомым");
     }
 
     @Test(groups = "positive")
@@ -22,7 +22,7 @@ public class CreatureTest {
         Assert.assertEquals(elephant.getName(), "Дамбо");
         Assert.assertEquals(elephant.getAge(), 2);
         Assert.assertEquals(elephant.getGender(), "Мужская особь");
-        System.out.println("Слон является актуальным");
+        System.out.println("Слон является искомым");
     }
 
 }
