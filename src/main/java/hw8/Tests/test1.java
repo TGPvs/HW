@@ -17,7 +17,7 @@ public class test1 extends BaseTest {
         int b = 3;
         int result = a + b;
 
-        Assert.assertEquals(result,5,"Проверка на дурака");
+        Assert.assertEquals(result,5,"Прооверка на результат");
         System.out.println("Assert.test1Test");
     }
 }
