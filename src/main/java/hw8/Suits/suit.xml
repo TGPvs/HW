@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Suite1" verbose="1">
+    <groups>
+        <run>
+            <include name="Smoke"/>
+        </run>
+    </groups>
+    <test name = "SmokeTest">
+        <classes>
+            <class name="hw8.Tests.test1" />
+        </classes>
+    </test>
+    <test name = "Critical">
+        <classes>
+            <class name="hw8.Tests.test2"/>
+        </classes>
+    </test>
+    <test name = "Extended">
+        <classes>
+            <class name="hw8.Tests.test3"/>
+        </classes>
+    </test>
+</suite>

@@ -13,4 +13,5 @@ public class Eagle extends Bird {
         System.out.println(getName()+ " кричит.");
 
     }
+
 }
